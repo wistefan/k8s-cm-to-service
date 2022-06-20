@@ -1,7 +1,7 @@
 FROM golang:1.18-alpine
 
 ENV LABEL_TO_WATCH="fiware.cm-to-service"
-CREATED_LABEL_VALUE="k8s-cm-to-service"
+ENV CREATED_LABEL_VALUE="k8s-cm-to-service"
 ENV NAMESPACE_TO_WATCH=""
 
 WORKDIR /go/src/app
